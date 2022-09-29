@@ -1,0 +1,1 @@
+https://textblob.readthedocs.io/en/dev/
