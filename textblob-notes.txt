@@ -1,1 +1,41 @@
 https://textblob.readthedocs.io/en/dev/
+
+============
+Install
+
+The corpora download created a dir in my home dir and download 4 sets of data:
+81 MB total. Nice and small. I'm liking this.
+The Stanford NLP container of that sophisticated Java app is about 1.3 GB.
+It is easier for me to run stuff on cheap VMs on the cloud if it is smaller and more lightweigt in general.
+
+(ve.textblob) ➜  textblob git:(main) ✗ ls -alt ~ | head
+total 1168
+drwxr-xr-x@ 84 bilbo  staff    2688 Sep 29 13:01 .
+-rw-------   1 bilbo  staff  115063 Sep 29 13:01 .zsh_history
+drwxr-xr-x   5 bilbo  staff     160 Sep 29 13:01 nltk_data
+-rw-------   1 bilbo  staff   27417 Sep 29 13:00 .viminfo
+-rw-r--r--@  1 bilbo  staff   36868 Sep 29 12:12 .DS_Store
+drwxr-xr-x  15 bilbo  staff     480 Sep 29 12:12 GITREPOS
+drwx------@ 14 bilbo  staff     448 Sep 28 17:49 Downloads
+drwxr-xr-x  13 bilbo  staff     416 Sep 28 17:14 .docker
+-rw-------   1 bilbo  staff      49 Sep 27 12:40 .lesshst
+(ve.textblob) ➜  textblob git:(main) ✗ ls -alt ~/nltk_data
+total 0
+drwxr-xr-x@ 84 bilbo  staff  2688 Sep 29 13:02 ..
+drwxr-xr-x   4 bilbo  staff   128 Sep 29 13:01 taggers
+drwxr-xr-x   5 bilbo  staff   160 Sep 29 13:01 .
+drwxr-xr-x   5 bilbo  staff   160 Sep 29 13:01 corpora
+drwxr-xr-x   4 bilbo  staff   128 Sep 29 13:01 tokenizers
+(ve.textblob) ➜  textblob git:(main) ✗
+
+Disk usage:
+(ve.textblob) ➜  textblob git:(main) ✗ du -h ~/nltk_data
+ 17M	/Users/bilbo/nltk_data/tokenizers/punkt/PY3
+ 36M	/Users/bilbo/nltk_data/tokenizers/punkt
+ 49M	/Users/bilbo/nltk_data/tokenizers
+5.9M	/Users/bilbo/nltk_data/taggers/averaged_perceptron_tagger
+8.3M	/Users/bilbo/nltk_data/taggers
+ 10M	/Users/bilbo/nltk_data/corpora/brown
+ 24M	/Users/bilbo/nltk_data/corpora
+ 81M	/Users/bilbo/nltk_data
+

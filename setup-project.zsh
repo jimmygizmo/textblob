@@ -23,7 +23,7 @@ pip install --upgrade setuptools
 pip install -r requirements.txt
 
 # At this point, the textblob module should be in place, so we can use it to download the corpora.
+# As of Sep 2022, this was about 82 MB total. 4 different data packages downloaded.
+# This will create a directory in the user's home directory: ~/nltk_data
 python -m textblob.download_corpora lite
-
-# TODO: Find out where it puts the stuff.
 
