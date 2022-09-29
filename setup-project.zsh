@@ -22,4 +22,8 @@ pip install --upgrade setuptools
 # Now we can install the modules we will need
 pip install -r requirements.txt
 
+# At this point, the textblob module should be in place, so we can use it to download the corpora.
+python -m textblob.download_corpora lite
+
+# TODO: Find out where it puts the stuff.
 
