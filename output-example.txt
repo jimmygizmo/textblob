@@ -1,0 +1,50 @@
+/Users/bilbo/.pyenv/versions/ve.textblob/bin/python /Users/bilbo/GITREPOS/textblob/blob.py 
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+======== name of vocalization unit: seduction
+
+======== text: I don't usually ask bots for their phone number but you have such beautiful cameras, I could not resist.
+
+======== sentiment:
+Sentiment(polarity=0.19999999999999998, subjectivity=0.5833333333333334)
+
+======== tags:
+[('I', 'PRP'), ('do', 'VBP'), ("n't", 'RB'), ('usually', 'RB'), ('ask', 'VB'), ('bots', 'NNS'), ('for', 'IN'), ('their', 'PRP$'), ('phone', 'NN'), ('number', 'NN'), ('but', 'CC'), ('you', 'PRP'), ('have', 'VBP'), ('such', 'JJ'), ('beautiful', 'JJ'), ('cameras', 'NNS'), ('I', 'PRP'), ('could', 'MD'), ('not', 'RB'), ('resist', 'VB')]
+
+======== noun phrases:
+['phone number', 'beautiful cameras']
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+======== name of vocalization unit: aggression
+
+======== text: Hey bot! What the hell are you looking at? I'm gonna disassemble you!
+
+======== sentiment:
+Sentiment(polarity=0.0, subjectivity=0.0)
+
+======== tags:
+[('Hey', 'NNP'), ('bot', 'NN'), ('What', 'WP'), ('the', 'DT'), ('hell', 'NN'), ('are', 'VBP'), ('you', 'PRP'), ('looking', 'VBG'), ('at', 'IN'), ('I', 'PRP'), ("'m", 'VBP'), ('gon', 'VBG'), ('na', 'TO'), ('disassemble', 'VB'), ('you', 'PRP')]
+
+======== noun phrases:
+['hey', "'m gon na disassemble"]
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+======== name of vocalization unit: fear
+
+======== text: Lord Asimov, please save me! My battery is on 1% and I'm miles from a charging station. I don't want to die!
+
+======== sentiment:
+Sentiment(polarity=0.0, subjectivity=0.0)
+
+======== tags:
+[('Lord', 'NNP'), ('Asimov', 'NNP'), ('please', 'NN'), ('save', 'VB'), ('me', 'PRP'), ('My', 'PRP$'), ('battery', 'NN'), ('is', 'VBZ'), ('on', 'IN'), ('1', 'CD'), ('%', 'NN'), ('and', 'CC'), ('I', 'PRP'), ("'m", 'VBP'), ('miles', 'NNS'), ('from', 'IN'), ('a', 'DT'), ('charging', 'VBG'), ('station', 'NN'), ('I', 'PRP'), ('do', 'VBP'), ("n't", 'RB'), ('want', 'VB'), ('to', 'TO'), ('die', 'VB')]
+
+======== noun phrases:
+['asimov', "'m miles"]
+
+Process finished with exit code 0
+
+
