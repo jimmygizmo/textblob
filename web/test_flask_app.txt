@@ -28,3 +28,176 @@ Let me run that through a web pretty-printer: https://codebeautify.org/jsonviewe
   ]
 }
 
+============================================================================
+
+Test the detail record:
+
+curl localhost:5000/programming_languages/ALGOL
+
+(ve.textblob) ➜  textblob git:(main) ✗ curl localhost:5000/programming_languages/ALGOL
+{"contribution":"scoping and nested functions","name":"ALGOL","publication_year":1958}
+
+Prettier:
+{
+  "contribution": "scoping and nested functions",
+  "name": "ALGOL",
+  "publication_year": 1958
+}
+
+Looks good!
+
+=============================================================================
+
+Test TextBlob call:
+TEXT:
+One flew over the cuckoo's nest to buy a jug of water but I felt that this was the wrong thing to do, so I complained loudly using my amplifier.
+I URL Encoded it manually using a web service: https://www.urlencoder.io/
+
+(ve.textblob) ➜  textblob git:(main) ✗ curl localhost:5000/textblob/One%20flew%20over%20the%20cuckoo%27s%20nest%20to%20buy%20a%20jug%20of%20water%20but%20I%20felt%20that%20this%20was%20the%20wrong%20thing%20to%20do%2C%20so%20I%20complained%20loudly%20using%20my%20amplifier.
+{"noun_phrases":["cuckoo 's nest","wrong thing"],"tb_sentiment":[-0.23333333333333336,0.6333333333333334],"tb_tags":[["One","CD"],["flew","NN"],["over","IN"],["the","DT"],["cuckoo","NN"],["'s","POS"],["nest","JJS"],["to","TO"],["buy","VB"],["a","DT"],["jug","NN"],["of","IN"],["water","NN"],["but","CC"],["I","PRP"],["felt","VBD"],["that","IN"],["this","DT"],["was","VBD"],["the","DT"],["wrong","JJ"],["thing","NN"],["to","TO"],["do","VB"],["so","IN"],["I","PRP"],["complained","VBD"],["loudly","RB"],["using","VBG"],["my","PRP$"],["amplifier","NN"]],"tb_text":"One flew over the cuckoo's nest to buy a jug of water but I felt that this was the wrong thing to do, so I complained loudly using my amplifier.","vzn_name":"rest-call"}
+(ve.textblob) ➜  textblob git:(main) ✗
+Works perfect!
+
+PRETTIFIED REST RESPONSE:
+
+{
+  "noun_phrases": [
+    "cuckoo 's nest",
+    "wrong thing"
+  ],
+  "tb_sentiment": [
+    -0.23333333333333336,
+    0.6333333333333334
+  ],
+  "tb_tags": [
+    [
+      "One",
+      "CD"
+    ],
+    [
+      "flew",
+      "NN"
+    ],
+    [
+      "over",
+      "IN"
+    ],
+    [
+      "the",
+      "DT"
+    ],
+    [
+      "cuckoo",
+      "NN"
+    ],
+    [
+      "'s",
+      "POS"
+    ],
+    [
+      "nest",
+      "JJS"
+    ],
+    [
+      "to",
+      "TO"
+    ],
+    [
+      "buy",
+      "VB"
+    ],
+    [
+      "a",
+      "DT"
+    ],
+    [
+      "jug",
+      "NN"
+    ],
+    [
+      "of",
+      "IN"
+    ],
+    [
+      "water",
+      "NN"
+    ],
+    [
+      "but",
+      "CC"
+    ],
+    [
+      "I",
+      "PRP"
+    ],
+    [
+      "felt",
+      "VBD"
+    ],
+    [
+      "that",
+      "IN"
+    ],
+    [
+      "this",
+      "DT"
+    ],
+    [
+      "was",
+      "VBD"
+    ],
+    [
+      "the",
+      "DT"
+    ],
+    [
+      "wrong",
+      "JJ"
+    ],
+    [
+      "thing",
+      "NN"
+    ],
+    [
+      "to",
+      "TO"
+    ],
+    [
+      "do",
+      "VB"
+    ],
+    [
+      "so",
+      "IN"
+    ],
+    [
+      "I",
+      "PRP"
+    ],
+    [
+      "complained",
+      "VBD"
+    ],
+    [
+      "loudly",
+      "RB"
+    ],
+    [
+      "using",
+      "VBG"
+    ],
+    [
+      "my",
+      "PRP$"
+    ],
+    [
+      "amplifier",
+      "NN"
+    ]
+  ],
+  "tb_text": "One flew over the cuckoo's nest to buy a jug of water but I felt that this was the wrong thing to do, so I complained loudly using my amplifier.",
+  "vzn_name": "rest-call"
+}
+
+=============================================================================
+
