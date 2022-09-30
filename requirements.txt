@@ -2,4 +2,6 @@
 
 textblob
 
+flask
+flask-restful
 

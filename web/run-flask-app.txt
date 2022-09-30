@@ -1,0 +1,6 @@
+
+Do this from inside the /web/ directory
+
+export FLASK_APP=app.py
+flask run
+

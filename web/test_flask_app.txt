@@ -1,0 +1,30 @@
+
+curl localhost:5000/programming_languages
+
+And you should see:
+
+(ve.textblob) ➜  textblob git:(main) ✗ curl localhost:5000/programming_languages
+{"programming_languages":[{"contribution":"record data","name":"COBOL","publication_year":1960},{"contribution":"scoping and nested functions","name":"ALGOL","publication_year":1958},{"contribution":"array processing","name":"APL","publication_year":1962}]}
+
+Let me run that through a web pretty-printer: https://codebeautify.org/jsonviewer
+
+{
+  "programming_languages": [
+    {
+      "contribution": "record data",
+      "name": "COBOL",
+      "publication_year": 1960
+    },
+    {
+      "contribution": "scoping and nested functions",
+      "name": "ALGOL",
+      "publication_year": 1958
+    },
+    {
+      "contribution": "array processing",
+      "name": "APL",
+      "publication_year": 1962
+    }
+  ]
+}
+
